@@ -14,4 +14,8 @@ public class PantryItems extends Foods {
     public int getExpireYear(){
        return expireYear;
     }
+
+    public int setYearBought(int year){
+        expireYear = year;
+    }
 }
