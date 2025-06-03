@@ -49,12 +49,13 @@ public class StoreTester
                     //creates new Pantry object
                     Foods item = new PantryItems(num1.getNames()[option-1],amount, year);
                     foods.add(item);
+                    input.nextLine();
                 }
                 else{
                     //creates new FreshFoods object
                     System.out.println("Do you want to buy the organic version of " + num1.getNames()[option-1] + "? Enter yes or no: (It will be one dollar extra)");
-                    input.nextLine();
                     String org = input.nextLine();
+                    input.nextLine();
                     if(org.equals("yes")){
                         Foods item = new FreshFoods(num1.getNames()[option-1], amount, true);
                         foods.add(item);
