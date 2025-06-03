@@ -65,6 +65,10 @@ public class Foods {
     public String getName(){
         return name;
     }
+
+    public void setName(String name){
+        this.name = name;
+    }
     
     /**
     Returns part of receipt of items to be bought
